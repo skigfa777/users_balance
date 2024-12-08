@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<p>Привет, <?=$USER->GetFullName()?>, <a href="<?=$APPLICATION->GetCurPage()?>?logout=yes">выйти?</a></p>
+<p>Привет, <?=$USER->GetFullName()?>, <a href="<?=$APPLICATION->GetCurPage() . '?' . $USER->getLogoutParams()?>">выйти?</a></p>
 <?if($arParams["DISPLAY_TOP_PAGER"]):?>
 	<?=$arResult["NAV_STRING"]?><br />
 <?endif;?>
