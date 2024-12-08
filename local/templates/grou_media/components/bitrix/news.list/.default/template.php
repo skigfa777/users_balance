@@ -34,7 +34,9 @@ foreach($arResult["ITEMS"] as $arItem):?>
             </th>
             <?
         endforeach;?> 
-        <th>Действие</th>  
+        <?if($arResult['CAN_ACCOUNT_REFILL'] == 1) {?>
+            <th>Действие</th> 
+        <?}?> 
     </tr>
     <?
     $header = true;
