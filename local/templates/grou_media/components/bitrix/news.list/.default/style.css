@@ -1,0 +1,27 @@
+.groumedia__wrap {
+    overflow-x: auto;
+    max-width: 100%;
+}
+.groumedia__table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.groumedia__table th,
+.groumedia__table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #0288d1;
+}
+.groumedia__table th {
+    background-color: #0288d1;
+    color: #fff;
+}
+.groumedia__table td {
+    background-color: #e1f5fe;
+}
+.groumedia__table tr:nth-child(even) td {
+    background-color: #b3e5fc;
+}
